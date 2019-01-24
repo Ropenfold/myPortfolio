@@ -1,0 +1,138 @@
+.work-link {
+  color: #eafc40;
+}
+.contact-link {
+  color: #1ed2f4;
+}
+.about-link:hover {
+  color: #f4f5f6;
+}
+body {
+  font-family: sans-serif;
+}
+nav ul li {
+  display: inline-block;
+}
+.about-link {
+  color: #1ed2f4;
+}
+.work-link:hover {
+  color: #f4f5f6;
+}
+.contact-link:hover {
+  color: #f4f5f6;
+}
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #2b2b3a;
+  width: 100%;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav ul {
+  text-align: right;
+}
+
+#welcome-section {
+  padding-top: 25vh;
+  min-height: 75vh;
+  background: linear-gradient(180deg, #2b2b3a, #254558);
+}
+.img-border {
+  border-color: #eafc40;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50%;
+}
+.headers-title {
+  text-align: center;
+  color: #f4f5f6;
+}
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.container {
+  display: grid;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  width: 100%;
+  grid-template-columns: 400px 400px 400px;
+}
+.circle {
+  display: inline-block;
+  margin: 20px;
+  border: 30px;
+  width: 100px;
+  height: 100px;
+  line-height: 95px;
+  border: 5px solid #eafc40;
+  border-radius: 50%;
+  color: #eafc40;
+  text-align: center;
+  text-decoration: none;
+  background: #254558;
+  box-shadow: 0 0 3px gray;
+  font-size: 20px;
+}
+.circle:hover {
+  background-color: #2b2b3a;
+}
+
+#circles {
+  display: flex;
+  justify-content: center;
+}
+#contact {
+  background-color: #2b2b3a;
+}
+#projects {
+  background-color: #f4f5f6;
+}
+#projects-title {
+  color: #254558;
+}
+#contact-title {
+  color: #f4f5f6;
+  padding-top: 15px;
+}
+#name-title {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #f4f5f6;
+}
+#hobbies-header {
+  color: #2b2b3a;
+  text-align: center;
+}
+#hobbies-list li {
+  list-style-type: none;
+  color: #2b2b3a;
+  position: relative;
+  left: 300px;
+}
+#i-like-to {
+  position: relative;
+  left: 220px;
+}
+#education-header {
+  color: #2b2b3a;
+  text-align: center;
+}
+@media (max-width: 100px) {
+  .container {
+    display: grid;
+    padding: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    width: 100%;
+    grid-template-columns: 200px 200px;
+  }
+}
