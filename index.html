@@ -2,16 +2,17 @@
 <html>
 <!--Header for website, computer reads this-->
 <head>
-    <title>My Website</title>
+    <title>My Portfolio</title>
     <!--Link to stylesheet -->
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <meta charset="UTF-8" />
 </head>
 
 <body>
+    <link href="https://fonts.googleapis.com/css?family=Erica+One|Major+Mono+Display" rel="stylesheet">
     <!--Nav bar list-->
     <nav id="navbar">
-        <ul>
+        <ul><li id="name">stuart roper</li>
             <li><a href="#welcome-section" class="about-link links">about</a></li>
             <li><a href="#projects" class="work-link">work</a></li>
             <li><a href="#contact" class="contact-link">contact</a></li>
@@ -20,50 +21,30 @@
     <section id="welcome-section">
         <!--Link for image-->
         <img class="img-border image" src="https://avatars0.githubusercontent.com/u/12457150?s=460&v=4" alt="picture of stuart roper" />
-        <h1 id="personal-title" class="headers-title">
-            I'm stuart. I build websites.
-        </h1>
-        <h4 id="name-title">Stuart Roper</h4>
+        <h1 id="personal-title" class="headers-title">I'm stuart.</h1>
     </section>
     <!--Projects section-->
     <section id="projects" class="headers-title">
         <h2 id="projects-title">my portfolio</h2>
-        <div class="container">
-            <div class="project-tile">
-                <a href="https://codepen.io/stuart-roper/pen/MZbWeg">
-                    <img src="https://i.imgur.com/ojluRId.png" alt="tribute project"/></a>
-            </div>
-            <div class="project-tile">
-                <a href="https://codepen.io/stuart-roper/pen/XoRGgo"><img src="https://i.imgur.com/Jkkhvud.png" alt="Survey project"/></a>
-            </div>
-            <div class="project-tile">
-                <a href="https://codepen.io/stuart-roper/pen/JwJqXy"><img src="https://i.imgur.com/crhNxrm.png" alt="product landing project"/>
-                </a>
-            </div>
-            <div class="project-tile">
-                <a href="https://codepen.io/stuart-roper/pen/VqqGbN"><img src="https://i.imgur.com/NGgHoDP.png" alt="technical documentation project"/></a>
-            </div>
+        <h3 class="portfolio-sub-headers">HTML/CSS</h3>
+        <div class="container-html">
+            <div class="project-tile"><a href="https://codepen.io/stuart-roper/pen/MZbWeg">
+                    <img class="image-border" src="https://i.imgur.com/ojluRId.png" alt="tribute project"/></a></div>
+            <div class="project-tile"><a href="https://codepen.io/stuart-roper/pen/XoRGgo"><img class="image-border" src="https://i.imgur.com/Jkkhvud.png" alt="Survey project"/></a></div>
+            <div class="project-tile"><a href="https://codepen.io/stuart-roper/pen/JwJqXy"><img class="image-border" src="https://i.imgur.com/crhNxrm.png" alt="product landing project"/></a></div>
+            <div class="project-tile"><a href="https://codepen.io/stuart-roper/pen/VqqGbN"><img class="image-border" src="https://i.imgur.com/NGgHoDP.png" alt="product landing project"/></a></div>
+        </div></div>
+        <h3 class="portfolio-sub-headers">Android/Udacity projects</h3>
+        <div class="container-android">
+            <div><img class="image-border android-image-size" src="https://i.imgur.com/edlBzm2.png" alt="single page app"/></div>
+            <div><img class="image-border android-image-size" src="https://i.imgur.com/1AYEU5J.png" alt="score keeper app"/></div>
+            <div><img class="image-border android-image-size" src="https://i.imgur.com/tUYVeZY.png" alt="tour app"/></div>
+            <div><img class="image-border android-image-size" src="https://i.imgur.com/UxDD1sU.png" alt="quiz app"/></div>
+            <div><img class="image-border android-image-size" src="https://i.imgur.com/BeT03hS.png" alt="google book api" /></div>
+            <div><img class="image-border android-image-size" src="https://i.imgur.com/AQu2iT8.png" alt="popular movies" /></div>
         </div>
     </section>
     <!--Hobbies section-->
-    <section id="hobbies">
-        <h2 id="hobbies-header">hobbies</h2>
-        <h3 id="i-like-to">i like to..</h3>
-        <ul id="hobbies-list">
-            <li>play cricket</li>
-            <li>watch football</li>
-            <li>code</li>
-            <li>read</li>
-            <li>travel</li>
-            <li>watch american football</li>
-        </ul>
-    </section>
-    <section>
-        <h2 id="education-header">education</h2>
-        <ul>
-            <li>Birmingham City University 2001-2004 - multimedia technology</li>
-        </ul>
-    </section>
     <section id="contact">
         <h2 id="contact-title" class="headers-title">contact me</h2>
         <div id="circles">
@@ -74,5 +55,4 @@
         </div>
     </section>
 </body>
-
 </html>
