@@ -10,6 +10,10 @@
 body {
   font-family: sans-serif;
 }
+.headers-title {
+  padding-left: 15px;
+}
+
 nav ul li {
   display: inline-block;
 }
@@ -27,30 +31,39 @@ nav {
   top: 0;
   background-color: #2b2b3a;
   width: 100%;
+  z-index: 2;
 }
 nav ul li a {
   text-decoration: none;
   padding: 20px;
+  font-family: "Major Mono Display", monospace;
 }
-
+#name {
+  color: #f4f5f4;
+  font-family: "Major Mono Display", monospace;
+}
 nav ul {
   text-align: right;
 }
-
 #welcome-section {
-  padding-top: 25vh;
-  min-height: 75vh;
+  padding-top: 15vh;
+  min-height: 85vh;
   background: linear-gradient(180deg, #2b2b3a, #254558);
+  z-index: -1;
+}
+#personal-title {
+  font-family: "Major Mono Display", monospace;
+  font-size: 60px;
+  color: #f4f5f6;
+  position: relative;
+  top: 30%;
+  padding-left: 20px;
 }
 .img-border {
   border-color: #eafc40;
   border-width: 10px;
   border-style: solid;
   border-radius: 50%;
-}
-.headers-title {
-  text-align: center;
-  color: #f4f5f6;
 }
 .image {
   display: block;
@@ -59,13 +72,29 @@ nav ul {
   right: 50%;
   width: 20%;
 }
-.container {
+.container-html {
   display: grid;
   padding: 10px;
   grid-column-gap: 10px;
   grid-row-gap: 20px;
   width: 100%;
   grid-template-columns: 400px 400px 400px;
+}
+.container-android {
+  display: grid;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  width: 100%;
+  grid-template-columns: 320px 320px 320px;
+}
+.container-hobbies {
+  display: grid;
+  padding: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  width: 100%;
+  grid-template-columns: 150px 150px 150px 150px 150px;
 }
 .circle {
   display: inline-block;
@@ -86,10 +115,10 @@ nav ul {
 .circle:hover {
   background-color: #2b2b3a;
 }
-
 #circles {
   display: flex;
   justify-content: center;
+  font: sans-serif;
 }
 #contact {
   background-color: #2b2b3a;
@@ -109,31 +138,46 @@ nav ul {
   padding-bottom: 15px;
   color: #f4f5f6;
 }
-#hobbies-header {
-  color: #2b2b3a;
-  text-align: center;
+.portfolio-sub-headers {
+  color: #254558;
 }
-#hobbies-list li {
-  list-style-type: none;
-  color: #2b2b3a;
-  position: relative;
-  left: 300px;
+.image-border {
+  border-color: #254558;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10%;
 }
-#i-like-to {
-  position: relative;
-  left: 220px;
+.android-image-size {
+  height: 400px;
+  width: 250px;
 }
-#education-header {
-  color: #2b2b3a;
-  text-align: center;
+.hobbies-image-size {
+  height: 140px;
+  width: 130px;
 }
-@media (max-width: 100px) {
-  .container {
+@media (max-width: 300px) {
+  .container-html {
     display: grid;
     padding: 10px;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
     width: 100%;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 400px 400px;
+  }
+  .container-android {
+    display: grid;
+    padding: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    width: 100%;
+    grid-template-columns: 320px 320px;
+  }
+  .container-hobbies {
+    display: grid;
+    padding: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    width: 100%;
+    grid-template-columns: 150px 150px;
   }
 }
